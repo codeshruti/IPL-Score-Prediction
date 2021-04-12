@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IPL Score Predictor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='ipl-favicon.ico') }}">
+        
+    <script src="https://kit.fontawesome.com/f13b0bc903.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <h1> IPL Score Predictor 🏆</h1> 
+        <h2> Predicted Scores </h2>
+
+			<!-- Result -->
+			<div class="register" >
+                <center>
+                <p style="font-size:30px;">The Predicted score range is <br> {{ lower_limit }} to {{ upper_limit }}</p><br><br>
+                </center>
+                
+		     </div>
+        <br><br><br>
+              <center>
+                    <p style="font-size:20px;">Made by Shruti Srivatsan.</p><br>
+                
+                <a href="https://github.com/codeshruti"><i class="fab fa-github fa-lg contact-icon"></i></a>&nbsp;&nbsp;
+               <a href="https://www.linkedin.com/in/shruti-srivatsan-27s/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a><br><br>
+           </center>
+     <center>
+    <carousel>
+  <img src="{{ url_for('static', filename= 'mi.jpg') }}">
+  <img src="{{ url_for('static', filename= 'srh.jpeg') }}">
+  <img src="{{ url_for('static', filename= 'rcb.jpeg') }}">
+  <img src="{{ url_for('static', filename= 'dc.jpeg') }}">
+  <img src="{{ url_for('static', filename= 'rr.jpg') }}">
+  <img src="{{ url_for('static', filename= 'kkr.jpeg') }}">
+  <img src="{{ url_for('static', filename= 'pbks.jpeg') }}">
+  <img src="{{ url_for('static', filename= 'csk.jpeg') }}">
+</carousel>
+        
+    </center>
+    
+    </body>
+</html>
