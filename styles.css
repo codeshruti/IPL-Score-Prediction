@@ -10,6 +10,7 @@ h1{
 }
 h2{
     text-align: center;
+    background-color: red;
     padding: 20px;    
 } 
 .inside {
